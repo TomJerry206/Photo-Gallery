@@ -1,21 +1,28 @@
 function upDate(previewPic){
     console.log("Mouse over event triggered");
+    let imageDiv = document.getElementById("image");
 
-    console.log("Alt:", previewPic.alt);
-    console.log("Source:", previewPic.src);
+    imageDiv.innerHTML = previewPic.alt;
+    imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
 
-    document.getElementById("image").innerHTML = previewPic.alt;
-
-    document.getElementById("image").style.backgroundImage = 
-        "url('" + previewPic.src + "')";
+    
+    if(previewPic.alt.includes("Beach")){
+        imageDiv.style.color = "blue";
+    }
+    else if(previewPic.alt.includes("Mountain")){
+        imageDiv.style.color = "green";
+    }
+    else if(previewPic.alt.includes("Galaxy")){
+        imageDiv.style.color = "purple";
+    }
 }
 
 function undo(){
-    console.log("Mouse out event triggered");
+    let imageDiv = document.getElementById("image");
 
-    document.getElementById("image").innerHTML = 
+    imageDiv.innerHTML = 
         "Hover over an image below to display here.";
 
-    document.getElementById("image").style.backgroundImage = 
-        "url('')";
+    imageDiv.style.backgroundImage = "url('')";
+    imageDiv.style.color = "black";
 }
