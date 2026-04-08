@@ -10,7 +10,7 @@ function upDate(previewPic){
         imageDiv.style.color = "yellow";
     }
     else if(previewPic.alt.includes("Mountain")){
-        imageDiv.style.color = "orangre";
+        imageDiv.style.color = "orange";
     }
     else if(previewPic.alt.includes("Galaxy")){
         imageDiv.style.color = "white";
