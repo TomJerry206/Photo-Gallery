@@ -7,13 +7,13 @@ function upDate(previewPic){
 
     
     if(previewPic.alt.includes("Beach")){
-        imageDiv.style.color = "white";
-    }
-    else if(previewPic.alt.includes("Mountain")){
         imageDiv.style.color = "yellow";
     }
+    else if(previewPic.alt.includes("Mountain")){
+        imageDiv.style.color = "orangre";
+    }
     else if(previewPic.alt.includes("Galaxy")){
-        imageDiv.style.color = "orange";
+        imageDiv.style.color = "white";
     }
 }
 
