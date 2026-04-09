@@ -10,10 +10,10 @@ function upDate(previewPic){
         imageDiv.style.color = "#000000";
     }
     else if(previewPic.alt.includes("Mountain")){
-        imageDiv.style.color = "#5a3e1b";
+        imageDiv.style.color = "#5A3E1B";
     }
     else if(previewPic.alt.includes("Galaxy")){
-        imageDiv.style.color = "#aeefff";
+        imageDiv.style.color = "#AEEFFF";
     }
 }
 
